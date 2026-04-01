@@ -452,11 +452,14 @@ h1 {
   }
 
   .title-line {
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 8px;
   }
 
   .date-chip {
-    margin-top: 2px;
+    margin-top: -1px;
+    margin-left: auto;
     padding: 6px 10px;
     font-size: 0.74rem;
   }
@@ -497,5 +500,11 @@ h1 {
   .delete-button {
     justify-self: auto;
     align-self: center;
+  }
+
+  .todo-text {
+    position: relative;
+    top: -1px;
+    line-height: 1.4;
   }
 }
