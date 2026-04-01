@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4e8d8">
+  <title>&#50724;&#45720;&#51032; &#54624; &#51068; &#47700;&#47784;&#51109;</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="memo-app">
+    <section class="memo-shell" aria-labelledby="pageTitle">
+      <header class="memo-header">
+        <div>
+          <p class="eyebrow">Simple Todo Memo</p>
+          <h1 id="pageTitle">&#50724;&#45720;&#51032; &#54624; &#51068;</h1>
+          <p class="subtitle">&#49373;&#44033;&#45208;&#45716; &#51068;&#51012; &#51201;&#44256;, &#45149;&#45212; &#54637;&#47785;&#51008; &#52404;&#53356;&#54644;&#48372;&#49464;&#50836;.</p>
+        </div>
+        <div class="date-chip" id="todayText" aria-live="polite"></div>
+      </header>
+
+      <section class="input-card" aria-label="&#54624; &#51068; &#51077;&#47141;">
+        <form class="todo-form" id="todoForm">
+          <label class="sr-only" for="todoInput">&#54624; &#51068; &#51077;&#47141;</label>
+          <input
+            id="todoInput"
+            class="todo-input"
+            name="todo"
+            type="text"
+            maxlength="120"
+            placeholder="&#50696;: &#47932; 2&#47532;&#53552; &#47560;&#49884;&#44592;"
+            autocomplete="off"
+          >
+          <button type="submit" class="add-button">&#52628;&#44032;</button>
+        </form>
+      </section>
+
+      <section class="week-bar" aria-label="&#51452;&#44036; &#44592;&#47197;">
+        <ul class="week-bar-list" id="weekBarList">
+          <li class="week-day" data-day="1">
+            <span class="week-label">&#50900;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="2">
+            <span class="week-label">&#54868;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="3">
+            <span class="week-label">&#49688;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="4">
+            <span class="week-label">&#47785;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="5">
+            <span class="week-label">&#44552;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="6">
+            <span class="week-label">&#53664;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+          <li class="week-day" data-day="0">
+            <span class="week-label">&#51068;</span>
+            <span class="week-dot" aria-hidden="true"></span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="summary-row" aria-label="&#51652;&#54665; &#51221;&#48372;">
+        <article class="summary-card summary-card-inline">
+          <span class="summary-inline-item">&#51204;&#52404; <strong class="summary-value" id="totalCount">0</strong></span>
+          <span class="summary-inline-item">&#50756;&#47308; <strong class="summary-value" id="doneCount">0</strong></span>
+          <span class="summary-inline-item">&#45224;&#51008; &#51068; <strong class="summary-value" id="leftCount">0</strong></span>
+        </article>
+      </section>
+
+      <section class="list-card" aria-labelledby="listTitle">
+        <div class="list-head">
+          <h2 id="listTitle">&#52404;&#53356;&#47532;&#49828;&#53944;</h2>
+          <button type="button" class="clear-button" id="clearDoneButton">&#50756;&#47308;&#47564; &#51648;&#50864;&#44592;</button>
+        </div>
+        <ul class="todo-list" id="todoList"></ul>
+        <p class="empty-state" id="emptyState">&#50500;&#51649; &#51201;&#51008; &#54624; &#51068;&#51060; &#50630;&#50612;&#50836;. &#52395; &#47700;&#47784;&#47484; &#45224;&#44200;&#48372;&#49464;&#50836;.</p>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
