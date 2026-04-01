@@ -7,7 +7,7 @@
   "theme_color": "#f4e8d8",
   "icons": [
     {
-      "src": "./todo1-home.png",
+      "src": "./todo1-home-safe.png",
       "sizes": "1024x1024",
       "type": "image/png",
       "purpose": "any"
