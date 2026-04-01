@@ -65,6 +65,13 @@ body {
   align-items: flex-start;
 }
 
+.title-line {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   color: var(--accent);
@@ -92,16 +99,15 @@ h1 {
 }
 
 .date-chip {
-  align-self: flex-start;
-  margin-top: 10px;
-  padding: 10px 14px;
+  margin-top: 4px;
+  padding: 7px 12px;
   border-radius: 999px;
   background: var(--surface-strong);
   border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 10px 25px rgba(90, 61, 34, 0.08);
   color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -220,7 +226,8 @@ h1 {
 }
 
 .add-button {
-  padding: 0 22px;
+  min-height: 46px;
+  padding: 0 24px;
   background: var(--accent);
   color: #fffaf6;
   font-weight: 700;
@@ -236,6 +243,11 @@ h1 {
   padding: 10px 14px;
   background: rgba(122, 105, 90, 0.12);
   color: var(--muted);
+}
+
+.clear-button {
+  padding: 8px 12px;
+  font-size: 0.92rem;
 }
 
 .clear-button:hover,
@@ -421,9 +433,7 @@ h1 {
   }
 
   .memo-header {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
+    display: block;
   }
 
   .todo-form {
@@ -438,9 +448,19 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-left: 6px;
   }
 
-  .date-chip,
+  .title-line {
+    gap: 8px;
+  }
+
+  .date-chip {
+    margin-top: 2px;
+    padding: 6px 10px;
+    font-size: 0.74rem;
+  }
+
   .add-button,
   .clear-button {
     justify-self: start;
@@ -466,7 +486,7 @@ h1 {
 
   .summary-inline-item {
     flex: 1 1 0;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 
   .todo-item {
