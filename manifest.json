@@ -1,0 +1,16 @@
+{
+  "name": "\uC624\uB298\uC758 \uD560 \uC77C",
+  "short_name": "\uC624\uB298\uC758 \uD560 \uC77C",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4e8d8",
+  "theme_color": "#f4e8d8",
+  "icons": [
+    {
+      "src": "./todo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
